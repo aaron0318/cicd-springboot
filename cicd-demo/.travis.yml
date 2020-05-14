@@ -1,0 +1,8 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+install: cd cicd-demo && mvn clean -Dgpg.skip=true
+
+script: mvn package
