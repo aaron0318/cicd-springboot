@@ -14,7 +14,6 @@ public class TestController {
     @GetMapping(value = "hello")
     public String hello() {
         // jenkins cicd test
-        //
         return "hello " + DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now());
     }
 }
