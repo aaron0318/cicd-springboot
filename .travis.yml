@@ -15,3 +15,7 @@ install: cd cicd-demo && mvn clean -Dgpg.skip=true
 script:
   - mvn deploy
   - bash <(curl -s https://codecov.io/bash)
+
+cache:
+  directories:
+    - $HOME/.m2/repository/
